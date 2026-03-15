@@ -1,0 +1,36 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}    
+
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    font-size: 5em;
+    color: whitesmoke;
+}
+
+.ICM {
+    font-family: "Iosevka Charon Mono", monospace;
+    font-style: normal;
+    color: aliceblue;
+    text-align: center;
+}
+
+.DTM {
+  font-family: "Datatype", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+
