@@ -15,28 +15,29 @@
   <body>
     <div class="center-content">
       <div>
-        <h1>FRAMES</h1>
-        <p class="ICM">Predict the Destiny</p>
+        <h1>FLAMES</h1>
+        <p class="ICM" color="#bbe4ff">Predict the Destiny</p>
       </div>
 
+      <br>
       <div class="inputs">
         <form action="/destiny" method="get" class="center-content">
-          <input type="text" id="Name1" name="name1" placeholder="Enter Name" />
-          <img
-            src="{{ url_for('static', filename='images/heart-calligraphy-style.png') }}"
-            id="heart-img"
-            width="3%"
-          />
-          <input
-            type="text"
-            id="Name2"
-            name="name2"
-            placeholder="Enter Name"
-          />
-
-          <div class="center-content">
-            <button type="submit" class="DTM">See Destiny</button>
+          <div class="into-row">
+            <input type="text" id="Name1" name="name1" placeholder="Enter Name" />
+            <img
+              src="{{ url_for('static', filename='images/heart-calligraphy-style.png') }}"
+              id="heart-img"
+              width="3%"
+            />
+            <input
+              type="text"
+              id="Name2"
+              name="name2"
+              placeholder="Enter Name"
+            />
           </div>
+          <br><br><br>
+          <button type="submit" class="DTM">See Destiny</button>
         </form>
       </div>
     </div>
