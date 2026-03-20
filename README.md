@@ -67,13 +67,13 @@ git clone https://github.com/V-R-DhanushRaj/flames.git
 2. Navigate to the project folder
 
 ```bash
-cd flames-project
+cd flames
 ```
 
 3. Run the Flask application
 
 ```bash
-flask app.py
+flask run
 ```
 
 ---
