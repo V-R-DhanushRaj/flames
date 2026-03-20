@@ -3,13 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">  
 
-    <title>Destiny</title>
+    <title>Flames</title>
   </head>
 
   <body>
-    <p>Your destiny awaits!</p>
-    <p>{{destiny_msg}}</p>
+    <div class="center-content">
+      <h1>{{destiny_msg}}</h1>
+
+      {% if destiny_msg == "Friends" %}
+        <img
+          src="{{ url_for('static', filename='images/FLAMES/friends.png') }}"
+          alt="Friends"
+          class="final-result"
+        />
+      {% elif destiny_msg == "Love" %}
+        <img
+          src="{{ url_for('static', filename='images/FLAMES/love.png') }}"
+          alt="Love"
+          class="final-result"  
+        />
+      {% elif destiny_msg == "Affection" %}
+        <img
+          src="{{ url_for('static', filename='images/FLAMES/affection.png') }}"
+          alt="Affection"
+          class="final-result"
+        />
+      {% elif destiny_msg == "Marriage" %}
+        <img
+          src="{{ url_for('static', filename='images/FLAMES/marriage.png') }}"
+          alt="Marriage"
+          class="final-result"
+        />
+      {% elif destiny_msg == "Enemy" %}
+        <img
+          src="{{ url_for('static', filename='images/FLAMES/enemy.png') }}"
+          alt="Enemy"
+          class="final-result"
+        />
+      {% elif destiny_msg == "Siblings" %}
+        <img
+          src="{{ url_for('static', filename='images/FLAMES/siblings.png') }}"
+          alt="Siblings"
+          class="final-result"
+        />
+      {% endif %}
+
+      <br><br>
+      <button onclick="window.history.back()" class="back-button">Go back</button>
+    </div>
   </body>
 </html>

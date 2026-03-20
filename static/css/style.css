@@ -5,6 +5,13 @@ button {
     font-size: 100%;
 }
 
+button.back-button {
+    background-color: azure;
+    border-color: azure;
+    color: black;
+    font-size: 150%;
+}
+
 input {
     color: brown;
 }
@@ -52,4 +59,10 @@ h1 {
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+img.final-result {
+    height: 30%;
+    width: 30%;
+    border-radius: 5%;
 }
